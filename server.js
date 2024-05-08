@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3000;
 
 // Setup CORS
 app.use(cors({
-  origin: 'https://talkplayground-frontend-56cfac714117.herokuapp.com/' // Adjust this to match your frontend URL
+  origin: 'https://talkplayground-frontend-56cfac714117.herokuapp.com' // Adjust this to match your frontend URL
 }));
 
 app.use(bodyParser.json());
