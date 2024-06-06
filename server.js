@@ -6,9 +6,9 @@ const PORT = process.env.PORT || 3000;
 
 const logs = []; // Array to store log messages
 
-// Setup CORS
+// Setup CORS to allow all origins
 app.use(cors({
-  origin: 'https://talkplayground-frontend-56cfac714117.herokuapp.com' // Adjust this to match your frontend URL
+  origin: '*' // Allow CORS from any origin
 }));
 
 app.use(bodyParser.json());
